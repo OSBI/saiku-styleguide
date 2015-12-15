@@ -1,8 +1,8 @@
+<img src="https://raw.githubusercontent.com/OSBI/saiku/assets/icon-javascript-256.png" alt="Saiku JavaScript code styleguide" align="right" />
+
 # JavaScript
 
 > Saiku JavaScript code styleguide.
-
-<img src="https://raw.githubusercontent.com/OSBI/saiku/assets/icon-javascript-256.png" alt="Saiku JavaScript code styleguide" align="right" />
 
 # Table of Contents
 

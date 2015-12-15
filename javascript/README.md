@@ -1207,4 +1207,4 @@ We use [ESLint](http://eslint.org) to lint our JavaScript code. All the rules ca
 * [Netshoes JavaScript Style Guide](https://github.com/netshoes/styleguide/tree/master/javascript)
 * [Nicolas Bevacqua's JavaScript Style Guide](https://github.com/bevacqua/js)
 
-**[⬅ back to main](../../)**&nbsp;&nbsp;&nbsp;&nbsp;**[⬆ back to top](#table-of-contents)**
+**[⬅ back to main](../../../)**&nbsp;&nbsp;&nbsp;&nbsp;**[⬆ back to top](#table-of-contents)**

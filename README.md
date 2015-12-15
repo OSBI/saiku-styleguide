@@ -9,7 +9,7 @@ This repository holds the guidelines we follow to write the code of Saiku. The d
 ## Styleguides
 
 * [CSS](css/README.md)
-* [HTML](markup/README.md)
+* [HTML](html/README.md)
 * [JavaScript](javascript/README.md)
 * [Java](java/README.md)
 

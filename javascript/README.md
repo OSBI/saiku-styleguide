@@ -627,7 +627,7 @@ function foo() {
 
 ## Equality comparisons
 
-* [12.1](#12.1) <a name='12.1'></a> Use strict equality to compare variable values
+* [12.1](#12.1) <a name='12.1'></a> Use strict equality to compare variable values.
 
 > Strict equality checks for both value and type which is why we expect.
 
@@ -1096,7 +1096,7 @@ $('.js-items')
 
 ## Type checking
 
-The typeof operator returns a string indicating the type of the unevaluated operand.
+The `typeof` operator returns a string indicating the type of the unevaluated operand.
 
 * [19.1](#19.1) <a name='19.1'></a> String
 
@@ -1201,10 +1201,10 @@ We use [ESLint](http://eslint.org) to lint our JavaScript code. All the rules ca
 
 ### Inspiration
 
-* [Netshoes JavaScript Style Guide](https://github.com/netshoes/styleguide/tree/master/javascript)
 * [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
-* [Magnetis JavaScript Style Guide](https://github.com/magnetis/styleguide/blob/master/JavaScript.md)
 * [Google JavaScript Style Guide](http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml?showone=Semicolons#Semicolons)
+* [Magnetis JavaScript Style Guide](https://github.com/magnetis/styleguide/blob/master/JavaScript.md)
+* [Netshoes JavaScript Style Guide](https://github.com/netshoes/styleguide/tree/master/javascript)
 * [Nicolas Bevacqua's JavaScript Style Guide](https://github.com/bevacqua/js)
 
 **[⬆ back to top](#table-of-contents)**

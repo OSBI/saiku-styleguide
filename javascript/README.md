@@ -2,6 +2,8 @@
 
 > Saiku JavaScript code styleguide.
 
+<img src="https://raw.githubusercontent.com/OSBI/saiku/assets/icon-javascript-256.png" alt="Saiku JavaScript code styleguide" align="right" />
+
 # Table of Contents
 
 1. [Semicolons](#semicolons)
@@ -18,12 +20,14 @@
 12. [Equality comparisons](#equality-comparisons)
 13. [Conditionals](#conditionals)
 14. [Blocks](#blocks)
-15. [Comments](#comments)
-16. [Naming conventions](#naming-conventions)
-17. [Whitespace](#whitespace)
-18. [jQuery](#jquery)
-19. [Code linting](#code-linting)
-20. [Resources](#resources)
+15. [Console Statements](#console-statements)
+16. [Comments](#comments)
+17. [Naming conventions](#naming-conventions)
+18. [Whitespace](#whitespace)
+19. [Type checking](#type-checking)
+20. [jQuery](#jquery)
+21. [Code linting](#code-linting)
+22. [Resources](#resources)
 
 ## Semicolons
 
@@ -627,6 +631,24 @@ function foo() {
 
 > Strict equality checks for both value and type which is why we expect.
 
+```javascript
+// Bad
+function isEmptyString (text) {
+  return text == '';
+}
+
+isEmptyString(0);
+// <- true
+
+// Good
+function isEmptyString (text) {
+  return text === '';
+}
+
+isEmptyString(0);
+// <- false
+```
+
 **[⬆ back to top](#table-of-contents)**
 
 ## Conditionals
@@ -703,15 +725,21 @@ while(true) {
 
 **[⬆ back to top](#table-of-contents)**
 
+## Console Statements
+
+* [15.1](#15.1) <a name='15.1'></a> Preferably bake `console` statements into a service that can easily be disabled in production. Alternatively, don't ship any `console.log` printing statements to production distributions.
+
+**[⬆ back to top](#table-of-contents)**
+
 ## Comments
 
-* [15.1](#15.1) <a name='15.1'></a> Ensure your code is descriptive, well commented, and approachable by others. Great code comments convey context or purpose.
+* [16.1](#16.1) <a name='16.1'></a> Ensure your code is descriptive, well commented, and approachable by others. Great code comments convey context or purpose.
 
-* [15.2](#15.2) <a name='15.2'></a> Using `FIXME` and `TODO` tags can help other developers understand and maintain your code. In multiline comments, add a line break and place them at the end of the comment.
+* [16.2](#16.2) <a name='16.2'></a> Using `FIXME` and `TODO` tags can help other developers understand and maintain your code. In multiline comments, add a line break and place them at the end of the comment.
 
-* [15.3](#15.3) <a name='15.3'></a> Use documentation block syntax for multiline comments.
+* [16.3](#16.3) <a name='16.3'></a> Use documentation block syntax for multiline comments.
 
-* [15.4](#15.4) <a name='15.4'></a> Use `//` for single line comments. Place them on a newline above the subject of the comment and add an empty line before the comment.
+* [16.4](#16.4) <a name='16.4'></a> Use `//` for single line comments. Place them on a newline above the subject of the comment and add an empty line before the comment.
 
 ```javascript
 // Bad
@@ -779,7 +807,7 @@ function bootstrap() {
 
 ## Naming conventions
 
-* [16.1](#16.1) <a name='16.1'></a> Use `PascalCase` when naming constructors.
+* [17.1](#17.1) <a name='17.1'></a> Use `PascalCase` when naming constructors.
 
 ```javascript
 // Bad
@@ -799,7 +827,7 @@ function CrewMember(name, role) {
 var designer = new CrewMember('Tom Barber', 'Developer');
 ```
 
-* [16.2](#16.2) <a name='16.2'></a> Avoid single letter names and abbreviations. Be descriptive and clear.
+* [17.2](#17.2) <a name='17.2'></a> Avoid single letter names and abbreviations. Be descriptive and clear.
 
 ```javascript
 // Bad
@@ -839,7 +867,7 @@ function initialize() {
 }
 ```
 
-* [16.3](#16.3) <a name='16.3'></a> Always close constructor invocations with parenthesis.
+* [17.3](#17.3) <a name='17.3'></a> Always close constructor invocations with parenthesis.
 
 > It's going to be easier to pass new constructor values if needed in the future.
 
@@ -852,7 +880,7 @@ var bar = new FooBar();
 var baz = new FooBar(1, 'lorem');
 ```
 
-* [16.4](#16.4) <a name='16.4'></a> Always use a leading underscore `_` when naming private properties and methods.
+* [17.4](#17.4) <a name='17.4'></a> Always use a leading underscore `_` when naming private properties and methods.
 
 ```javascript
 // Bad
@@ -863,7 +891,7 @@ var __name = 'Bar';
 var _name = 'Baz';
 ```
 
-* [16.5](#16.5) <a name='16.5'></a> Booleans should start with "is", "has", or "should".
+* [17.5](#17.5) <a name='17.5'></a> Booleans should start with "is", "has", or "should".
 
 > This give us a clear idea of what that variable is.
 
@@ -879,7 +907,7 @@ var shouldAnimate = true;
 var hasAnimation = true;
 ```
 
-* [16.6](#16.6) <a name='16.6'></a> When naming an acessor, start with `get` or `set`. Also always name the getter argument as `value`.
+* [17.6](#17.6) <a name='17.6'></a> When naming an acessor, start with `get` or `set`. Also always name the getter argument as `value`.
 
 ```javascript
 var currentStatus;
@@ -903,7 +931,7 @@ function getStatus() {
 }
 ```
 
-* [16.7](#16.7) <a name='16.7'></a> When naming an event handler, prefix `on` along with its event type.
+* [17.7](#17.7) <a name='17.7'></a> When naming an event handler, prefix `on` along with its event type.
 
 ```javascript
 // Bad
@@ -921,7 +949,7 @@ function onClick() {
 }
 ```
 
-* [16.8](#16.8) <a name='16.8'></a> Use uppercase when naming "constant likes" variables.
+* [17.8](#17.8) <a name='17.8'></a> Use uppercase when naming "constant likes" variables.
 
 ```javascript
 // Bad
@@ -937,7 +965,7 @@ var RIGHT_KEY = 39;
 
 ## Whitespace
 
-* [17.1](#17.1) <a name='17.1'></a> Use soft tabs set to `4` spaces and never mix tabs with spaces.
+* [18.1](#18.1) <a name='18.1'></a> Use soft tabs set to `4` spaces and never mix tabs with spaces.
 
 ```javascript
 // Bad
@@ -961,7 +989,7 @@ function() {
 }
 ```
 
-* [17.2](#17.2) <a name='17.2'></a> Always add an empty line at the end of your file.
+* [18.2](#18.2) <a name='18.2'></a> Always add an empty line at the end of your file.
 
 ```javascript
 (function() {
@@ -971,7 +999,7 @@ function() {
 ↵
 ```
 
-* [17.3](#17.3) <a name='17.3'></a> Place a space before and after conditions and loop declarations.
+* [18.3](#18.3) <a name='18.3'></a> Place a space before and after conditions and loop declarations.
 
 ```javascript
 // Bad
@@ -991,7 +1019,7 @@ while (false) {
 }
 ```
 
-* [17.4](#17.4) <a name='17.4'></a> Set off operators with spaces.
+* [18.4](#18.4) <a name='18.4'></a> Set off operators with spaces.
 
 ```javascript
 // Bad
@@ -1001,7 +1029,7 @@ var x=y+5;
 var x = y + 5;
 ```
 
-* [17.5](#17.5) <a name='17.5'></a> Place a space after loop steps.
+* [18.5](#18.5) <a name='18.5'></a> Place a space after loop steps.
 
 ```javascript
 // Bad
@@ -1015,7 +1043,7 @@ for (var i = 0; i < 42; i++) {
 }
 ```
 
-* [17.6](#17.6) <a name='17.6'></a> Place a space after each function argument.
+* [18.6](#18.6) <a name='18.6'></a> Place a space after each function argument.
 
 ```javascript
 // Bad
@@ -1027,7 +1055,7 @@ function setUser(name, surname, age) {
 }
 ```
 
-* [17.7](#17.7) <a name='17.7'></a> Objects properties should be split into new lines.
+* [18.7](#18.7) <a name='18.7'></a> Objects properties should be split into new lines.
 
 ```javascript
 // Bad
@@ -1049,7 +1077,7 @@ var setup = {
 }
 ```
 
-* [17.8](#17.8) <a name='17.8'></a> Use indentation when making long method chains.
+* [18.8](#18.8) <a name='18.8'></a> Use indentation when making long method chains.
 
 ```javascript
 // Bad
@@ -1066,9 +1094,61 @@ $('.js-items')
 
 **[⬆ back to top](#table-of-contents)**
 
+## Type checking
+
+* [19.1](#19.1) <a name='19.1'></a> String
+
+```javascript
+typeof variable === 'string';
+```
+
+* [19.2](#19.2) <a name='19.2'></a> Number
+
+```javascript
+typeof variable === 'number';
+```
+
+* [19.3](#19.3) <a name='19.3'></a> Boolean
+
+```javascript
+typeof variable === 'boolean';
+```
+
+* [19.4](#19.4) <a name='19.4'></a> Object
+
+```javascript
+typeof variable === 'object';
+```
+
+* [19.5](#19.5) <a name='19.5'></a> Array
+
+```javascript
+Array.isArray(arrayLikeObject);
+```
+
+* [19.6](#19.6) <a name='19.6'></a> Node
+
+```javascript
+elem.nodeType === 1;
+```
+
+* [19.7](#19.7) <a name='19.7'></a> null
+
+```javascript
+variable === null;
+```
+
+* [19.8](#19.8) <a name='19.8'></a> undefined
+
+```javascript
+typeof variable === 'undefined';
+```
+
+**[⬆ back to top](#table-of-contents)**
+
 ## jQuery
 
-* [18.1](#18.1) <a name='18.1'></a> Always cache jQuery lookups.
+* [20.1](#20.1) <a name='20.1'></a> Always cache jQuery lookups.
 
 ```javascript
 // Bad
@@ -1083,11 +1163,11 @@ $item
   .addClass('is-disabled');
 ```
 
-* [18.2](#18.2) <a name='18.2'></a> Prefer `remove()` over `empty()`.
+* [20.2](#20.2) <a name='20.2'></a> Prefer `remove()` over `empty()`.
 
 > `remove()` is faster because it doesn't completely rewrite the DOM node.
 
-* [18.3](#18.3) <a name='18.3'></a> Always favor jQuery helpers over third-party and custom stuff.
+* [20.3](#20.3) <a name='20.3'></a> Always favor jQuery helpers over third-party and custom stuff.
 
 ```javascript
 // Bad (importing Underscore/LoDash just to use `_.bind()`)
@@ -1106,6 +1186,12 @@ trim('   f oo  '); // 'foo'
 // Good (instead use jQuery's `$.trim()`)
 $.trim('   f oo  '); // 'foo'
 ```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Code linting
+
+We use [ESLint](http://eslint.org) to lint our JavaScript code. All the rules can be found on the [`.eslintrc`](linters/.eslintrc) file.
 
 **[⬆ back to top](#table-of-contents)**
 

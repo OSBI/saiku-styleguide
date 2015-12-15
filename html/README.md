@@ -139,16 +139,16 @@
 ## Organization
 
 * [7.1](#7.1) <a name='7.1'></a> The order of rules declaration should look like the following.
-  1. `id` and `name`
-  2. Generic classes (utils, typography, grid and so on)
-  3. Specific classes
+  1. Generic classes (utils, typography, grid and so on)
+  2. Specific classes
+  3. `id` and `name`
   4. States
   5. Data attributes
   6. Other element attributes
   7. Boolean attributes
 
 ```html
-<input id="user-input" name="user-input" class="u-pull-left input--big is-disabled" data-component="input-text" data-parameters="{value: 42}" type="text" disabled />
+<input type="text" class="u-pull-left input--big is-disabled" id="user-input" name="user-input" data-component="input-text" data-parameters="{value: 42}" disabled />
 ```
 
 **[⬆ back to top](#table-of-contents)**
@@ -193,7 +193,7 @@
 
 ## Whitespace
 
-* [10.1](#10.1) <a name='10.1'></a> Use soft tabs set to `2` spaces and never mix spaces with tabs.
+* [10.1](#10.1) <a name='10.1'></a> Use soft tabs set to `4` spaces and never mix tabs with spaces.
 
 * [10.2](#10.2) <a name='10.2'></a> Always add an empty line at the end of your file.
 
@@ -201,10 +201,10 @@
 
 ```html
 <div
-  class="modal"
-  id="main-modal"
-  style="display: none;"
-  hidden
+	class="modal"
+	id="main-modal"
+	style="display: none;"
+	hidden
 >
 </div>
 ```

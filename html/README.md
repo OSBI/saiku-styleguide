@@ -201,10 +201,10 @@
 
 ```html
 <div
-	class="modal"
-	id="main-modal"
-	style="display: none;"
-	hidden
+  class="modal"
+  id="main-modal"
+  style="display: none;"
+  hidden
 >
 </div>
 ```

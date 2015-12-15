@@ -88,7 +88,7 @@
 * [3.1](#3.1) <a name='3.1'></a> Always specify a language for documents.
 
 ```html
-<html lang='en-us'>
+<html lang="en-us">
   <!-- ... -->
 </html>
 ```

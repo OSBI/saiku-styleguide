@@ -1096,6 +1096,8 @@ $('.js-items')
 
 ## Type checking
 
+The typeof operator returns a string indicating the type of the unevaluated operand.
+
 * [19.1](#19.1) <a name='19.1'></a> String
 
 ```javascript

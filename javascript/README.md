@@ -1134,13 +1134,13 @@ Array.isArray(arrayLikeObject);
 elem.nodeType === 1;
 ```
 
-* [19.7](#19.7) <a name='19.7'></a> null
+* [19.7](#19.7) <a name='19.7'></a> `null`
 
 ```javascript
 variable === null;
 ```
 
-* [19.8](#19.8) <a name='19.8'></a> undefined
+* [19.8](#19.8) <a name='19.8'></a> `undefined`
 
 ```javascript
 typeof variable === 'undefined';
@@ -1207,4 +1207,4 @@ We use [ESLint](http://eslint.org) to lint our JavaScript code. All the rules ca
 * [Netshoes JavaScript Style Guide](https://github.com/netshoes/styleguide/tree/master/javascript)
 * [Nicolas Bevacqua's JavaScript Style Guide](https://github.com/bevacqua/js)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬅ back to main](../../)**&nbsp;&nbsp;&nbsp;&nbsp;**[⬆ back to top](#table-of-contents)**

@@ -4,7 +4,7 @@
 
 > Saiku JavaScript code styleguide.
 
-# Table of Contents
+## Table of Contents
 
 1. [Semicolons](#semicolons)
 2. [Strict mode](#strict-mode)

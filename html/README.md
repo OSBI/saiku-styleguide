@@ -4,7 +4,7 @@
 
 > Saiku HTML code styleguide.
 
-# Table of Contents
+## Table of Contents
 
 1. [Syntax](#syntax)
 2. [Doctype](#doctype)

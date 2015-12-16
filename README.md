@@ -1,6 +1,4 @@
-<img src="https://raw.githubusercontent.com/OSBI/saiku/assets/icon-styleguide-256.png" alt="Saiku code styleguide" width="128" align="right" />
-
-# Saiku code styleguide
+# { Saiku code styleguide }
 
 This repository holds the guidelines we follow to write the code of Saiku. The documents present a set of rules to follow in order to make sure we write consistent code.
 

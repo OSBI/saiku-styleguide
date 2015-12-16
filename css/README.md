@@ -58,7 +58,7 @@
 * [2.7](#2.7) <a name='2.7'></a> Avoid hard-coded magic numbers.
 > These are definitelly a code smell and make super hard to maintain.
 
-```css
+```styl
 // Bad
 .selector {
   width: 73px; // WTF is 73px? Why?
@@ -77,7 +77,7 @@
 * [2.8](#2.8) <a name='2.8'></a> Avoid undoing styles.
 > These are code smells and almost always have room for improvement.
 
-```css
+```styl
 // Bad
 h2 {
   font-size: 2em;
@@ -116,7 +116,7 @@ h2 {
 
 > This approach improves code readability.
 
-```css
+```styl
 // Bad
 .link {
   color: #EAEAE2;
@@ -130,7 +130,7 @@ h2 {
 
 * [3.2](#3.2) <a name='3.2'></a> Prefer shorthand notation.
 
-```css
+```styl
 // Bad
 $color: #cccccc;
 
@@ -148,7 +148,7 @@ $color: #f60;
 
 > They're not consistently implemented on browsers.
 
-```css
+```styl
 // Bad
 .error {
   background: red;
@@ -166,7 +166,7 @@ $color: #f60;
 
 * [4.1](#4.1) <a name='4.1'></a> Avoid specifying units for zero values.
 
-```css
+```styl
 // Bad
 .square {
   border: 0px;
@@ -182,7 +182,7 @@ $color: #f60;
 
 > They do make code harder to read.
 
-```css
+```styl
 // Bad
 .heading {
   margin-left: -.75px;
@@ -202,7 +202,7 @@ $color: #f60;
 
 > We found it easier to match Photoshop visual specifications.
 
-```css
+```styl
 // Bad
 .text {
   letter-spacing: -0.75px;
@@ -218,7 +218,7 @@ $color: #f60;
 
 > Not doing so will break vertical rythm.
 
-```css
+```styl
 // Bad
 p {
   line-height: 1.5px;
@@ -244,7 +244,7 @@ p {
 
 * [6.1](#6.1) <a name='6.1'></a> Use double collons `::` to access pseudo elements.
 
-```css
+```styl
 // Bad
 .button:after {
   background: #f60;
@@ -266,7 +266,7 @@ p {
 
 > Even though some are not mandatory, it will enforce consistency.
 
-```css
+```styl
 // Bad
 @import helpers/clearfix;
 
@@ -296,7 +296,7 @@ input[type='radio'] {
 
 * [8.1](#8.1) <a name='8.1'></a> Following is an example of a well documented component following our standards.
 
-```css
+```styl
 /* ==========================================================================
    Component name
    ========================================================================== */
@@ -362,7 +362,7 @@ component-mixin() {
 
 * [9.1](#9.1) <a name='9.1'></a> Use `hyphen-case` to name classes, variables, functions, mixins and placeholders.
 
-```css
+```styl
 // Bad
 .fooBar {
   border: none;
@@ -388,7 +388,7 @@ LoremIpsumDolor {
 
 > The advantage of elements is to not rely on the markup to apply a certain style.
 
-```css
+```styl
 .menu-item {
   // ...
 }
@@ -418,7 +418,7 @@ LoremIpsumDolor {
 
 > Modifiers are also complementary, therefore a master/base class should exist to provide the visual foundation.
 
-```css
+```styl
 .logo {
   background: url('./logo.png') no-repeat;
 }
@@ -446,7 +446,7 @@ LoremIpsumDolor {
 
 * [9.4](#9.4) <a name='9.4'></a> States can be prefixed with `is`, `has` or `should`.
 
-```css
+```styl
 // Bad
 .logo.logoHidden {
   opacity: 0;
@@ -500,7 +500,7 @@ LoremIpsumDolor {
 
 * [11.1](#11.1) <a name='11.1'></a> Add a space after selector definition.
 
-```css
+```styl
 // Bad
 .selector{content: 'foo';}
 
@@ -510,7 +510,7 @@ LoremIpsumDolor {
 
 * [11.2](#11.2) <a name='11.2'></a> Add a space between a rule and its value.
 
-```css
+```styl
 // Bad
 .button {
   color:#fff;
@@ -526,7 +526,7 @@ LoremIpsumDolor {
 
 * [11.3](#11.3) <a name='11.3'></a> Add inner spaces to inline selectors.
 
-```css
+```styl
 // Bad
 .selector {content: 'foo';}
 
@@ -538,7 +538,7 @@ LoremIpsumDolor {
 
 > This will improve code readability.
 
-```css
+```styl
 // Bad
 .section { cursor: pointer; text-align: center; }
 
@@ -554,7 +554,7 @@ LoremIpsumDolor {
 
 * [11.5](#11.5) <a name='11.5'></a> When targeting multiple selectors break each one in a new line.
 
-```css
+```styl
 // Bad
 .footer, .header, .main {
   display: block;
@@ -569,7 +569,8 @@ LoremIpsumDolor {
 ```
 
 * [11.6](#11.6) <a name='11.6'></a> Keep multiple rules in more than one line for better readability.
-```css
+
+```styl
 // Bad
 .box {
   box-shadow: 0 1px 1px #eee,
@@ -590,7 +591,7 @@ LoremIpsumDolor {
 
 * [11.7](#11.7) <a name='11.7'></a> Add a white space after each comma on multiple values.
 
-```css
+```styl
 // Bad
 .selector {
   background: rgba(0,0,0,0.5);

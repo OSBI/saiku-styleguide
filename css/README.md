@@ -626,5 +626,6 @@ LoremIpsumDolor {
 * [Line-height units](http://tzi.fr/css/text/line-height-units#Unitless)
 * [Medium’s CSS is actually pretty f***ing good](https://medium.com/@fat/mediums-css-is-actually-pretty-fucking-good-b8e2a6c78b06)
 * [Why Ems?](https://css-tricks.com/why-ems)
+* [CSS Protips](https://github.com/AllThingsSmitty/css-protips)
 
 **[⬅ back to main](../../../)**&nbsp;&nbsp;&nbsp;&nbsp;**[⬆ back to top](#table-of-contents)**

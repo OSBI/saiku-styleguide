@@ -6,6 +6,7 @@ This repository holds the guidelines we follow to write the code of Saiku. The d
 
 ## Styleguides
 
+* [Best practices](best-practices/README.md)
 * [CSS](css/README.md)
 * [HTML](html/README.md)
 * [JavaScript](javascript/README.md)
@@ -14,3 +15,7 @@ This repository holds the guidelines we follow to write the code of Saiku. The d
 ## Contributing
 
 If you have something you want to add, remove or improve, feel free to [open an issue](https://github.com/OSBI/saiku-styleguide/issues/new) and ping the team.
+
+## License
+
+[![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](http://creativecommons.org/publicdomain/zero/1.0)

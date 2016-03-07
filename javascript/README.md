@@ -965,9 +965,14 @@ var RIGHT_KEY = 39;
 
 ## Whitespace
 
-* [18.1](#18.1) <a name='18.1'></a> Use soft tabs set to `4` spaces and never mix tabs with spaces.
+* [18.1](#18.1) <a name='18.1'></a> Use soft tabs set to `2` spaces and never mix spaces with tabs.
 
 ```javascript
+// Bad
+function() {
+∙∙∙∙var name;
+}
+
 // Bad
 function() {
 ∙var name;
@@ -975,17 +980,12 @@ function() {
 
 // Bad
 function() {
-∙∙var name;
-}
-
-// Good
-function() {
-∙∙∙∙var name;
-}
-
-// Good
-function() {
 ⇥var name;
+}
+
+// Good
+function() {
+∙∙var name;
 }
 ```
 

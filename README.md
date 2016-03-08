@@ -12,6 +12,7 @@ This repository holds the guidelines we follow to write the code of Saiku. The d
 * [JavaScript](javascript/README.md)
 * [Java](java/README.md)
 * [React](react/README.md)
+* [Scala](scala/README.md)
 
 ## Contributing
 

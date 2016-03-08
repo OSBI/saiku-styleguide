@@ -28,6 +28,8 @@
   * [1.2](#1.2) <a name="1.2"></a> Always use JSX syntax.
   * [1.3](#1.3) <a name="1.3"></a> Do not use `React.createElement` unless you're initializing the app from a file that is not JSX.
 
+**[⬆ back to top](#table-of-contents)**
+
 ## Class vs `React.createClass` vs stateless
 
   * [2.1](#2.1) <a name="2.1"></a> If you have internal state and/or refs, prefer `class extends React.Component` over `React.createClass` unless you have a very Good reason to use mixins. eslint: [`react/prefer-es6-class`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-es6-class.md) [`react/prefer-stateless-function`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-stateless-function.md)
@@ -72,6 +74,8 @@
     }
     ```
 
+**[⬆ back to top](#table-of-contents)**
+
 ## Naming
 
   * [3.1](#3.1) <a name="3.1"></a> **Extensions**: Use `.jsx` extension for React components.
@@ -105,6 +109,8 @@
     import Footer from './Footer';
     ```
 
+**[⬆ back to top](#table-of-contents)**
+
 ## Declaration
 
   * [4.1](#4.1) <a name="4.1"></a> Do not use `displayName` for naming components. Instead, name the component by reference.
@@ -120,6 +126,8 @@
     export default class ReservationCard extends React.Component {
     }
     ```
+
+**[⬆ back to top](#table-of-contents)**
 
 ## Alignment
 
@@ -148,6 +156,8 @@
     </Foo>
     ```
 
+**[⬆ back to top](#table-of-contents)**
+
 ## Quotes
 
   * [6.1](#6.1) <a name="6.1"></a> Always use double quotes (`"`) for JSX attributes, but single quotes for all other JS. eslint: [`jsx-quotes`](http://eslint.org/docs/rules/jsx-quotes)
@@ -169,6 +179,8 @@
     <Foo style={{ left: '20px' }} />
     ```
 
+**[⬆ back to top](#table-of-contents)**
+
 ## Spacing
 
   * [7.1](#7.1) <a name="7.1"></a> Always include a single space in your self-closing tag.
@@ -187,6 +199,8 @@
     // Good
     <Foo />
     ```
+
+**[⬆ back to top](#table-of-contents)**
 
 ## Props
 
@@ -220,6 +234,8 @@
     />
     ```
 
+**[⬆ back to top](#table-of-contents)**
+
 ## Parentheses
 
   * [9.1](#9.1) <a name="9.1"></a> Wrap JSX tags in parentheses when they span more than one line. eslint: [`react/wrap-multilines`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/wrap-multilines.md)
@@ -248,6 +264,8 @@
     }
     ```
 
+**[⬆ back to top](#table-of-contents)**
+
 ## Tags
 
   * [10.1](#10.1) <a name="10.1"></a> Always self-close tags that have no children. eslint: [`react/self-closing-comp`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/self-closing-comp.md)
@@ -274,6 +292,8 @@
       baz="baz"
     />
     ```
+
+**[⬆ back to top](#table-of-contents)**
 
 ## Methods
 
@@ -332,6 +352,8 @@
       // other stuff
     }
     ```
+
+**[⬆ back to top](#table-of-contents)**
 
 ## Ordering
 
@@ -407,6 +429,8 @@
   20. *Optional render methods* like `renderNavigation()` or `renderProfilePicture()`
   21. `render`
 
+**[⬆ back to top](#table-of-contents)**
+
 ## `isMounted`
 
   * [13.1](#13.1) <a name="13.1"></a> Do not use `isMounted`. eslint: [`react/no-is-mounted`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-is-mounted.md)
@@ -414,6 +438,8 @@
   > Why? [`isMounted` is an anti-pattern][anti-pattern], is not available when using ES6 classes, and is on its way to being officially deprecated.
 
   [anti-pattern]: https://facebook.github.io/react/blog/2015/12/16/ismounted-antipattern.html
+
+**[⬆ back to top](#table-of-contents)**
 
 ## Resources
 

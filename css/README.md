@@ -22,13 +22,13 @@
 
 ## Preprocessor
 
-* [1.1](#1.1) <a name='1.1'></a> [Stylus](http://stylus-lang.com) is our preprocessor of choice.
+* [1.1](#1.1) <a name="1.1"></a> [Stylus](http://stylus-lang.com) is our preprocessor of choice.
 
-* [1.2](#1.2) <a name='1.2'></a> Limit the use of its features to only variables and mixins.
+* [1.2](#1.2) <a name="1.2"></a> Limit the use of its features to only variables and mixins.
 
 > Getting too crazy with Stylus can lead to both terrible code maintenance and output.
 
-* [1.3](#1.3) <a name='1.3'></a> `@extend` is allowed only when used with placeholders.
+* [1.3](#1.3) <a name="1.3"></a> `@extend` is allowed only when used with placeholders.
 
 > `@extend`ing classes can lead to terrible code output.
 
@@ -36,26 +36,26 @@
 
 ## Best practices
 
-* [2.1](#2.1) <a name='2.1'></a> Avoid the use of `!important` at all costs. Exceptions to the rule:
+* [2.1](#2.1) <a name="2.1"></a> Avoid the use of `!important` at all costs. Exceptions to the rule:
 	1. It's being used within a helper class;
 	2. You can explain its use.
 
-* [2.2](#2.2) <a name='2.2'></a> Do not use ids.
+* [2.2](#2.2) <a name="2.2"></a> Do not use ids.
 > They kill modularity and are not necessary for styling.
 
-* [2.3](#2.3) <a name='2.3'></a> Do not manually add vendor prefixes.
+* [2.3](#2.3) <a name="2.3"></a> Do not manually add vendor prefixes.
 > Our tooling should be able to handle this.
 
-* [2.4](#2.4) <a name='2.4'></a> Do not use vendor-specific font rendering techniques.
+* [2.4](#2.4) <a name="2.4"></a> Do not use vendor-specific font rendering techniques.
 > They are not consistent, break constrast and typography rules.
 
-* [2.5](#2.5) <a name='2.5'></a> Prefer `background` over `background-color` when possible.
+* [2.5](#2.5) <a name="2.5"></a> Prefer `background` over `background-color` when possible.
 > Simply because it's a shorthand.
 
-* [2.6](#2.6) <a name='2.6'></a> Do not use `pointer-events`.
+* [2.6](#2.6) <a name="2.6"></a> Do not use `pointer-events`.
 > It's not reliable and it's not CSS's role.
 
-* [2.7](#2.7) <a name='2.7'></a> Avoid hard-coded magic numbers.
+* [2.7](#2.7) <a name="2.7"></a> Avoid hard-coded magic numbers.
 > These are definitelly a code smell and make super hard to maintain.
 
 ```styl
@@ -74,7 +74,7 @@
 }
 ```
 
-* [2.8](#2.8) <a name='2.8'></a> Avoid undoing styles.
+* [2.8](#2.8) <a name="2.8"></a> Avoid undoing styles.
 > These are code smells and almost always have room for improvement.
 
 ```styl
@@ -105,14 +105,14 @@ h2 {
 }
 ```
 
-* [2.9](#2.9) <a name='2.9'></a> Prefer `em` over `px`.
+* [2.9](#2.9) <a name="2.9"></a> Prefer `em` over `px`.
 > This allows for a more flexible element sizing.
 
 **[⬆ back to top](#table-of-contents)**
 
 ## Colors
 
-* [3.1](#3.1) <a name='3.1'></a> Hexadecimal values should always be in lower case.
+* [3.1](#3.1) <a name="3.1"></a> Hexadecimal values should always be in lower case.
 
 > This approach improves code readability.
 
@@ -128,7 +128,7 @@ h2 {
 }
 ```
 
-* [3.2](#3.2) <a name='3.2'></a> Prefer shorthand notation.
+* [3.2](#3.2) <a name="3.2"></a> Prefer shorthand notation.
 
 ```styl
 // Bad
@@ -144,7 +144,7 @@ $color: #ff6600;
 $color: #f60;
 ```
 
-* [3.3](#3.3) <a name='3.3'></a> Do not use CSS color names.
+* [3.3](#3.3) <a name="3.3"></a> Do not use CSS color names.
 
 > They're not consistently implemented on browsers.
 
@@ -164,7 +164,7 @@ $color: #f60;
 
 ## Numbers and units
 
-* [4.1](#4.1) <a name='4.1'></a> Avoid specifying units for zero values.
+* [4.1](#4.1) <a name="4.1"></a> Avoid specifying units for zero values.
 
 ```styl
 // Bad
@@ -178,7 +178,7 @@ $color: #f60;
 }
 ```
 
-* [4.2](#4.2) <a name='4.2'></a> Do not use floating decimals.
+* [4.2](#4.2) <a name="4.2"></a> Do not use floating decimals.
 
 > They do make code harder to read.
 
@@ -198,7 +198,7 @@ $color: #f60;
 }
 ```
 
-* [4.3](#4.3) <a name='4.3'></a> Use `pt` units to declare `letter-spacing` values.
+* [4.3](#4.3) <a name="4.3"></a> Use `pt` units to declare `letter-spacing` values.
 
 > We found it easier to match Photoshop visual specifications.
 
@@ -214,7 +214,7 @@ $color: #f60;
 }
 ```
 
-* [4.4](#4.4) <a name='4.4'></a> Do not add units for `line-height` values.
+* [4.4](#4.4) <a name="4.4"></a> Do not add units for `line-height` values.
 
 > Not doing so will break vertical rythm.
 
@@ -236,13 +236,13 @@ p {
 
 ## Inline assets
 
-* [5.1](#5.1) <a name='5.1'></a> Inline assets are only allowed if they weight less than or equal to `1KB` and are presented only once in the code.
+* [5.1](#5.1) <a name="5.1"></a> Inline assets are only allowed if they weight less than or equal to `1KB` and are presented only once in the code.
 
 **[⬆ back to top](#table-of-contents)**
 
 ## Pseudo elements
 
-* [6.1](#6.1) <a name='6.1'></a> Use double collons `::` to access pseudo elements.
+* [6.1](#6.1) <a name="6.1"></a> Use double collons `::` to access pseudo elements.
 
 ```styl
 // Bad
@@ -260,9 +260,9 @@ p {
 
 ## Quotes
 
-* [7.1](#7.1) <a name='7.1'></a> Use single quotes `'` for everything.
+* [7.1](#7.1) <a name="7.1"></a> Use single quotes `'` for everything.
 
-* [7.2](#7.2) <a name='7.2'></a> Always wrap values with quotes.
+* [7.2](#7.2) <a name="7.2"></a> Always wrap values with quotes.
 
 > Even though some are not mandatory, it will enforce consistency.
 
@@ -294,7 +294,7 @@ input[type='radio'] {
 
 ## Comments
 
-* [8.1](#8.1) <a name='8.1'></a> Following is an example of a well documented component following our standards.
+* [8.1](#8.1) <a name="8.1"></a> Following is an example of a well documented component following our standards.
 
 ```styl
 /* ==========================================================================
@@ -360,7 +360,7 @@ component-mixin() {
 
 ## Naming conventions
 
-* [9.1](#9.1) <a name='9.1'></a> Use `hyphen-case` to name classes, variables, functions, mixins and placeholders.
+* [9.1](#9.1) <a name="9.1"></a> Use `hyphen-case` to name classes, variables, functions, mixins and placeholders.
 
 ```styl
 // Bad
@@ -384,7 +384,7 @@ LoremIpsumDolor {
 }
 ```
 
-* [9.2](#9.2) <a name='9.2'></a> Elements should have the base module name as a prefix and the name of the element, separated by double underscores `__`.
+* [9.2](#9.2) <a name="9.2"></a> Elements should have the base module name as a prefix and the name of the element, separated by double underscores `__`.
 
 > The advantage of elements is to not rely on the markup to apply a certain style.
 
@@ -414,7 +414,7 @@ LoremIpsumDolor {
 }
 ```
 
-* [9.3](#9.3) <a name='9.3'></a> Modifiers should have the base module name as a prefix and the name of the modifier, separated by double hyphens `--`.
+* [9.3](#9.3) <a name="9.3"></a> Modifiers should have the base module name as a prefix and the name of the modifier, separated by double hyphens `--`.
 
 > Modifiers are also complementary, therefore a master/base class should exist to provide the visual foundation.
 
@@ -444,7 +444,7 @@ LoremIpsumDolor {
 }
 ```
 
-* [9.4](#9.4) <a name='9.4'></a> States can be prefixed with `is`, `has` or `should`.
+* [9.4](#9.4) <a name="9.4"></a> States can be prefixed with `is`, `has` or `should`.
 
 ```styl
 // Bad
@@ -498,7 +498,7 @@ LoremIpsumDolor {
 
 ## Whitespace
 
-* [11.1](#11.1) <a name='11.1'></a> Add a space after selector definition.
+* [11.1](#11.1) <a name="11.1"></a> Add a space after selector definition.
 
 ```styl
 // Bad
@@ -508,7 +508,7 @@ LoremIpsumDolor {
 .selector { content: 'foo'; }
 ```
 
-* [11.2](#11.2) <a name='11.2'></a> Add a space between a rule and its value.
+* [11.2](#11.2) <a name="11.2"></a> Add a space between a rule and its value.
 
 ```styl
 // Bad
@@ -524,7 +524,7 @@ LoremIpsumDolor {
 }
 ```
 
-* [11.3](#11.3) <a name='11.3'></a> Add inner spaces to inline selectors.
+* [11.3](#11.3) <a name="11.3"></a> Add inner spaces to inline selectors.
 
 ```styl
 // Bad
@@ -534,7 +534,7 @@ LoremIpsumDolor {
 .selector { content: 'foo'; }
 ```
 
-* [11.4](#11.4) <a name='11.4'></a> If a selector has more than a single rule, break all the rules into new lines.
+* [11.4](#11.4) <a name="11.4"></a> If a selector has more than a single rule, break all the rules into new lines.
 
 > This will improve code readability.
 
@@ -552,7 +552,7 @@ LoremIpsumDolor {
 }
 ```
 
-* [11.5](#11.5) <a name='11.5'></a> When targeting multiple selectors break each one in a new line.
+* [11.5](#11.5) <a name="11.5"></a> When targeting multiple selectors break each one in a new line.
 
 ```styl
 // Bad
@@ -568,7 +568,7 @@ LoremIpsumDolor {
 }
 ```
 
-* [11.6](#11.6) <a name='11.6'></a> Keep multiple rules in more than one line for better readability.
+* [11.6](#11.6) <a name="11.6"></a> Keep multiple rules in more than one line for better readability.
 
 ```styl
 // Bad
@@ -589,7 +589,7 @@ LoremIpsumDolor {
 }
 ```
 
-* [11.7](#11.7) <a name='11.7'></a> Add a white space after each comma on multiple values.
+* [11.7](#11.7) <a name="11.7"></a> Add a white space after each comma on multiple values.
 
 ```styl
 // Bad
@@ -607,7 +607,7 @@ LoremIpsumDolor {
 
 ## Code linting
 
-* [12.1](#12.1) <a name='12.1'></a> We use [stylelint](http://stylelint.io) to lint our CSS code. All the rules can be found on the [`stylelint-config.js`](/linters/stylelint-config.js) file.
+* [12.1](#12.1) <a name="12.1"></a> We use [stylelint](http://stylelint.io) to lint our CSS code. All the rules can be found on the [`stylelint-config.js`](/linters/stylelint-config.js) file.
 
 **[⬆ back to top](#table-of-contents)**
 

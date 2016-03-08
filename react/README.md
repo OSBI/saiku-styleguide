@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/OSBI/saiku-styleguide/assets/icon-react-256.svg" alt="Saiku React code styleguide" align="right" />
+<img src="https://raw.githubusercontent.com/OSBI/saiku-styleguide/assets/icon-react-256.png" width="200" alt="Saiku React code styleguide" align="right" />
 
 # React
 

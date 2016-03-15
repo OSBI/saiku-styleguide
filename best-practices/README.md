@@ -1,5 +1,3 @@
-<img src="https://raw.githubusercontent.com/OSBI/saiku-styleguide/assets/icon-best-practices-256.png" width="210" alt="Saiku general development best practices" align="right" />
-
 # Best Practices
 
 > Saiku general development best practices.

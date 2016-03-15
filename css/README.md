@@ -214,7 +214,7 @@ $color: #f60;
 
 * [4.4](#4.4) <a name="4.4"></a> Do not add units for `line-height` values.
 
-> Not doing so will break vertical rythm.
+> Not doing so will break vertical rhythm.
 
 ```styl
 // Bad

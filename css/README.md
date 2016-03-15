@@ -73,6 +73,7 @@
 ```
 
 * [2.8](#2.8) <a name="2.8"></a> Avoid undoing styles.
+
 > These are code smells and almost always have room for improvement.
 
 ```styl
@@ -104,6 +105,7 @@ h2 {
 ```
 
 * [2.9](#2.9) <a name="2.9"></a> Prefer `em` over `px`.
+
 > This allows for a more flexible element sizing.
 
 **[⬆ back to top](#table-of-contents)**

@@ -11,6 +11,7 @@ This repository holds the guidelines we follow to write the code of Saiku. The d
 * [HTML](html/README.md)
 * [JavaScript](javascript/README.md)
 * [React](react/README.md)
+* [Java](https://google.github.io/styleguide/javaguide.html)
 
 ## Contributing
 
